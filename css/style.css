@@ -907,7 +907,7 @@ margin: 10px 0;
     width: 975px;
     height: 270px;
     right: 0;
-    top: 0;
+    top: 0;  
 }
 .gList{
     position: absolute;
@@ -917,13 +917,14 @@ margin: 10px 0;
     width: 250px;
     height: 250px;
     transition: 1s;
+    cursor: pointer;
 }
-.gList > div {
+/* .gList > div {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: #fff;
-}
+} */
 .gList:first-child > div {opacity: 0;}
 .gList:last-child > div, .gList:nth-child(2) > div{opacity: 0.2;}
 .gList:nth-child(3) > div {opacity: 0.4;}
@@ -1524,6 +1525,73 @@ footer{
 
 
 
+/* *********************************************반응형 640px************************** */
+  @media ( max-width: 640px ){
+    #sideLogin{display: none;}
+
+    .slide {height: 182px; border-radius: 0;}
+    .slideArea > .slideImg {background-size: contain;}
+    .slide > .slideList{display: none;}
+    .sldBtn{top: 180px;}
+    .sldBtn > .next {transform: scale(70%);}
+    .sldBtn > .prev {transform: scale(70%) rotate(180deg);}
+
+
+    .section1{display: block; width: 100%; height: 400px;}
+    .recommend{
+        width: 100%;
+        height: 360px;
+    }
+    .recommend > p {text-align: center;}
+    .recommendGame:hover{box-shadow: none;}
+    .recommendGame:hover > img{transform: none; transition: none;}
+    .login{display: none;}
+
+    .section2{ width: 100%; height: 650px;}
+    .newGame{display: block; height: 600px;}
+    .N-G {display: block; height: 300px; width: 100%;}
+    .N-G > .goTo{display: none;}
+    .newGameMore {display: none;}
+    .newGameImg > img:nth-child(1){left: 10px;}
+    .newGameImg > img:nth-child(2){display: none;}
+    .newGameImg > img:nth-child(3){transform: scale(65%); top: -280px; right: -210px;}
+
+    .section3{z-index: 1300;}
+    .section3 > p:nth-child(2){top: 10px;}
+    .allGames-menu{width: 100%; padding: 0; left: 0;}
+    .allGames-menu > ul > p{font-size: 15px;}
+    .allGames-menu > ul > li{font-size: 13px;}
+
+    .game > .gameTitle{transform: scale(60%); left: -40px;}
+
+    .Logo{display: none;}
+    .gList{display: none !important;}
+    .gameLogo{top: -50px;left: 0;}
+    .gList:first-child{display: block !important;left: 680px;}
+    .allGame-btn{width: 100%;}
+    .gameText{width: 80%; left: 0; font-size: 15px; color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0.3);}
+
+    .mobileGame{grid-template-rows: 160px 160px 160px 160px;row-gap: 10px;}
+    .mobileGame-box{ display: block; position: relative;}
+    .mobileGame-box > img{position: absolute; left: 50%; transform: translateX(-50%);}
+    .mobileContent{position: absolute; bottom: 0;}
+    .mobileContent > p {display: none;}
+    .mobileContent{width: 100%;}
+    .mGameName{
+        position: absolute;
+        display: block !important;
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+        height: 20px;
+        padding-right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0px;
+    }
+
+    .footer-bottom > .lang {display: none ;}
+}
 
  
 

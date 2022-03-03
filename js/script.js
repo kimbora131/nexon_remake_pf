@@ -231,6 +231,41 @@ $(function(){
     leftbtn()
     rightbtn()
 
+    //전체게임안에 동그라미 게임이미지를 눌러도 슬라이드 되도록 하기
+
+    $('.rpgGameList').on('click',function(){
+        let rpgListIndex = $(this).index()
+
+        for( var i = 0; i < rpgListIndex ; i++ ){
+            $('.rpgGameList').eq(0).appendTo(rpgGameSlide)
+            $('.rpgText').eq(0).appendTo(rpgGameText)
+            $('.rpgLogo').eq(0).appendTo(gameRpgLogo)
+        }
+    })
+    $('.fpsGameList').on('click',function(){
+        let fpsListIndex = $(this).index()
+
+        for( var i = 0; i < fpsListIndex ; i++ ){
+            $('.fpsGameList').eq(0).appendTo(fpsGameSlide)
+            $('.fpsText').eq(0).appendTo(fpsGameText)
+            $('.fpsLogo').eq(0).appendTo(gameFpsLogo)
+        }
+    })
+    $('.stageGameList').on('click',function(){
+        let stageListIndex = $(this).index()
+
+        for( var i = 0; i < stageListIndex ; i++ ){
+            $('.stageGameList').eq(0).appendTo(stageGameSlide)
+            $('.stageText').eq(0).appendTo(stageGameText)
+            $('.stageLogo').eq(0).appendTo(gameStageLogo)
+        }
+    })
+
+
+
+
+
+
 
 
     //푸터 언어 바꾸기
