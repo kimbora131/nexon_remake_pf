@@ -1626,8 +1626,8 @@ footer{
     .gameLogo{top: -50px;left: 0;}
     .gameList {width: 100%;}
     .gList:first-child{display: block !important; left: 50%; transform: translateX(-50%);}
-    .gList:nth-child(2){display: block !important; left: 55%;}
-    .gList:nth-child(6){display: block !important; left: 5%;}
+    .gList:nth-child(2){display: block !important; left: 50%;}
+    .gList:nth-child(6){display: block !important; left: 50%; transform: translateX(-100%) scale(80%);}
     .allGame-btn{width: 100%;}
     .gameText{width: 100%; left: 0; font-size: 15px; color: rgb(0, 0, 0); transform: translateX(0%); background-color: rgba(255, 255, 255, 0.3);}
     .gameText > .gText {left: 50%; top: 50%; transform: translate(-50% ,-50%); width: 70%;}
