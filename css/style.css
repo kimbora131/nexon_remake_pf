@@ -1609,6 +1609,7 @@ footer{
     .newGameImg > img:nth-child(1){left: 10px;}
     .newGameImg > img:nth-child(2){display: none;}
     .newGameImg > img:nth-child(3){transform: scale(65%); top: -280px; right: -210px;}
+    .ng1Cha1 {background-size: cover;}
     .ng2Cha1 {width: 100%;}
 
 
