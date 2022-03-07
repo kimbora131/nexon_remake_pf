@@ -1523,14 +1523,68 @@ footer{
     
   }
 
+/* *********************************************반응형 950px************************** */
+@media ( max-width: 950px ){
+    .gameLogo {display: none;}
+    .gameList{left: 50%; transform: translateX(-50%) scale(70%); }
+    .gameText {width: 90%; left: 50%; transform: translateX(-50%); }
+    .gameText > .gText {left: 50%; transform: translateX(-50%); width: 80%;}
+    .allGame-btn{width: 100%;}
 
+
+
+    .gameText{width: 100%; left: 0; font-size: 15px; color: rgb(0, 0, 0); transform: translateX(0%); background-color: rgba(255, 255, 255, 0.3);}
+    .gameText > .gText {left: 50%; top: 50%; transform: translate(-50% ,-50%); width: 70%;}
+
+
+    .mobileGame{grid-template-rows: 160px 160px 160px 160px;row-gap: 10px;}
+    .mobileGame-box{ display: block; position: relative;}
+    .mobileGame-box > img{position: absolute; left: 50%; top: 10px; transform: translateX(-50%);}
+    .mobileContent{position: absolute; bottom: 0;}
+    .mobileContent > p {display: none;}
+    .mobileContent{width: 100%;}
+    .mGameName{
+        position: absolute;
+        display: block !important;
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+        height: 20px;
+        padding-right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5px;
+    }
+}
+
+
+
+
+/* *********************************************반응형 740px************************** */
+@media ( max-width: 740px ){
+    .section1{display: block; width: 100%; height: 400px;}
+    .recommend{
+        width: 100%;
+        height: 360px;
+        padding: 0;
+    }
+    .recommend > p {text-align: center;}
+    .recommendGame:hover{box-shadow: none;}
+    .recommendGame:hover > img{transform: none; transition: none;}
+    .login{display: none;}
+
+    .newGame1 > .newGameImg > img:nth-child(2) {display: none;}
+    .newGame2 > .newGameImg > img:nth-child(2) {transform: scale(130%); left: -10px; top: 400px;}
+
+    .mobileGame-box > img{position: absolute; left: 50%; top: 10px; transform: translateX(-50%); background-size: contain;}
+}
 
 /* *********************************************반응형 640px************************** */
   @media ( max-width: 640px ){
     #sideLogin{display: none;}
 
     .slide {height: 182px; border-radius: 0;}
-    .slideArea > .slideImg {background-size: contain;}
+    .slideArea > .slideImg {background-size: cover;}
     .slide > .slideList{display: none;}
     .sldBtn{top: 180px;}
     .sldBtn > .next {transform: scale(70%);}
@@ -1555,10 +1609,13 @@ footer{
     .newGameImg > img:nth-child(1){left: 10px;}
     .newGameImg > img:nth-child(2){display: none;}
     .newGameImg > img:nth-child(3){transform: scale(65%); top: -280px; right: -210px;}
+    .ng2Cha1 {width: 100%;}
+
 
     .section3{z-index: 1300;}
     .section3 > p:nth-child(2){top: 10px;}
     .allGames-menu{width: 100%; padding: 0; left: 0;}
+    .allGames-menu > ul {width: 25%;}
     .allGames-menu > ul > p{font-size: 15px;}
     .allGames-menu > ul > li{font-size: 13px;}
 
@@ -1567,28 +1624,15 @@ footer{
     .Logo{display: none;}
     .gList{display: none !important;}
     .gameLogo{top: -50px;left: 0;}
-    .gList:first-child{display: block !important;left: 680px;}
+    .gameList {width: 100%;}
+    .gList:first-child{display: block !important; left: 50%; transform: translateX(-50%);}
+    .gList:nth-child(2){display: block !important; left: 55%;}
+    .gList:nth-child(6){display: block !important; left: 5%;}
     .allGame-btn{width: 100%;}
-    .gameText{width: 80%; left: 0; font-size: 15px; color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0.3);}
+    .gameText{width: 100%; left: 0; font-size: 15px; color: rgb(0, 0, 0); transform: translateX(0%); background-color: rgba(255, 255, 255, 0.3);}
+    .gameText > .gText {left: 50%; top: 50%; transform: translate(-50% ,-50%); width: 70%;}
 
-    .mobileGame{grid-template-rows: 160px 160px 160px 160px;row-gap: 10px;}
-    .mobileGame-box{ display: block; position: relative;}
-    .mobileGame-box > img{position: absolute; left: 50%; transform: translateX(-50%);}
-    .mobileContent{position: absolute; bottom: 0;}
-    .mobileContent > p {display: none;}
-    .mobileContent{width: 100%;}
-    .mGameName{
-        position: absolute;
-        display: block !important;
-        text-align: center;
-        font-size: 13px;
-        width: 100%;
-        height: 20px;
-        padding-right: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0px;
-    }
+    
 
     .footer-bottom > .lang {display: none ;}
 }
