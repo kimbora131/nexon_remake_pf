@@ -1633,7 +1633,14 @@ footer{
     .gameText{width: 100%; left: 0; font-size: 15px; color: rgb(0, 0, 0); transform: translateX(0%); background-color: rgba(255, 255, 255, 0.3);}
     .gameText > .gText {left: 50%; top: 50%; transform: translate(-50% ,-50%); width: 70%;}
 
-    
+    .section4{margin-bottom: 200px;}
+    .mobileGame{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 160px 160px 160px 160px;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
 
     .footer-bottom > .lang {display: none ;}
 }
